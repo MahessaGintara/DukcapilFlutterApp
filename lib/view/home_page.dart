@@ -110,7 +110,16 @@ class _HomeState extends State<Home> {
                               padding: const EdgeInsets.all(6),
                               margin: const EdgeInsets.all(4),
                               child: IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) {
+                                        return const KartuKeluargaPage();
+                                      },
+                                    ),
+                                  );
+                                },
                                 icon: const Icon(FontAwesomeIcons.children),
                               ),
                             ),

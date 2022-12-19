@@ -28,7 +28,7 @@ class _KartuKeluargaPageState extends State<KartuKeluargaPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 144, 172, 32),
-        title: const Text("Kartu Keluarga"),
+        title: const Text("Penambahan Anggota Kartu Keluarga"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
