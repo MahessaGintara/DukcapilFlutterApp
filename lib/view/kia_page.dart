@@ -183,17 +183,27 @@ class _PembuatanKIAState extends State<PembuatanKIA> {
                 );
               },
             ),
-            Positioned(
-              bottom: 0,
-              right: 0,
-              child: ElevatedButton(
-                onPressed: () {
-                  if (_formKey.currentState!.validate()) {
-                    _formKey.currentState!.save();
-                  }
-                },
-                child: const Text("Simpan"),
-              ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Center(
+                  child: SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        if (_formKey.currentState!.validate()) {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            const SnackBar(
+                              content: Text("Data berhasil disimpan"),
+                            ),
+                          );
+                        }
+                      },
+                      child: const Text("Simpan"),
+                    ),
+                  ),
+                )
+              ],
             ),
           ],
         ),
