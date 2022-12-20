@@ -1,3 +1,4 @@
+import 'package:disdukcapil_app/view/akta_kelahiran_page.dart';
 import 'package:disdukcapil_app/view/kartu_keluarga.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -142,7 +143,16 @@ class _HomeState extends State<Home> {
                               padding: const EdgeInsets.all(6),
                               margin: const EdgeInsets.all(4),
                               child: IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) {
+                                        return const AktaKelahiranPage();
+                                      },
+                                    ),
+                                  );
+                                },
                                 icon: const Icon(FontAwesomeIcons.baby),
                               ),
                             ),

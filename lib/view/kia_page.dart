@@ -85,7 +85,7 @@ class _PembuatanKIAState extends State<PembuatanKIA> {
                         height: 16,
                       ),
                       fileInput["fotoKIA"]?.path != ""
-                          ? Image.file(fileInput?["fotoKIA"] ?? File(""))
+                          ? Image.file(fileInput["fotoKIA"] ?? File(""))
                           : Container(),
                       const SizedBox(
                         height: 16,
@@ -132,7 +132,7 @@ class _PembuatanKIAState extends State<PembuatanKIA> {
                       ),
                       fileInput["fotoAktaKelahiran"]?.path != ""
                           ? Image.file(
-                              fileInput?["fotoAktaKelahiran"] ?? File(""))
+                              fileInput["fotoAktaKelahiran"] ?? File(""))
                           : Container(),
                       const SizedBox(
                         height: 16,
@@ -176,7 +176,7 @@ class _PembuatanKIAState extends State<PembuatanKIA> {
                         height: 16,
                       ),
                       fileInput["fotoAnak"]?.path != ""
-                          ? Image.file(fileInput?["fotoAnak"] ?? File(""))
+                          ? Image.file(fileInput["fotoAnak"] ?? File(""))
                           : Container(),
                     ],
                   ),
