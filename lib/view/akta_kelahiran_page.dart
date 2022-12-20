@@ -273,6 +273,19 @@ class _AktaKelahiranPageState extends State<AktaKelahiranPage> {
                 );
               },
             ),
+            // button here
+            Positioned(
+              bottom: 0,
+              right: 0,
+              child: ElevatedButton(
+                onPressed: () {
+                  if (_formKey.currentState!.validate()) {
+                    _formKey.currentState!.save();
+                  }
+                },
+                child: const Text("Simpan"),
+              ),
+            ),
           ],
         ),
       ),
